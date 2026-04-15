@@ -1,6 +1,3 @@
-import 'package:code_builder/code_builder.dart';
-import 'package:dart_style/dart_style.dart';
-
 import 'style_file_data.dart';
 import 'utils.dart';
 
@@ -30,103 +27,45 @@ void generateExampleAppConstants(List icons) {
     }
   });
 
-  final allIconsClass = Class(
-    (classBuilder) => classBuilder
-      ..abstract = true
-      ..name = 'AllIcons'
-      ..methods.addAll(
-        [
-          buildGetterMethod(
-            returnType: 'List<PhosphorIconData>',
-            name: 'icons',
-            body: 'allFlatIconsAsMap.values.toList()',
-          ),
-          buildGetterMethod(
-            returnType: 'List<String>',
-            name: 'names',
-            body: 'allFlatIconsAsMap.keys.toList()',
-          ),
-          buildGetterMethod(
-            returnType: 'Map<String, PhosphorIconData>',
-            name: 'allFlatIconsAsMap',
-            body: '''{
-      ...regularIcons,
-      ...thinIcons,
-      ...lightIcons,
-      ...boldIcons,
-      ...fillIcons,
-      ...duotoneIcons,
-      }''',
-          ),
-          for (final entry in stylesMaps.entries)
-            buildIconsMapGetterByStyle(
-              style: entry.key,
-              lines: entry.value,
-            ),
-        ],
-      ),
-  );
+  final styleGetters = stylesMaps.entries.map((entry) {
+    final style = entry.key;
+    final lines = entry.value;
+    return _buildIconsMapGetter(
+      styleName: style.styleName,
+      lines: lines,
+    );
+  }).join('\n\n');
 
-  final allFilesLib = Library(
-    (libraryBuilder) => libraryBuilder
-      ..directives.addAll([
-        Directive.import(
-          'package:phosphor_flutter/phosphor_flutter.dart',
-        ),
-      ])
-      ..body.add(allIconsClass),
-  );
+  final content = """import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-  final emitter = DartEmitter();
-  final generatedFileContent = DartFormatter().format(
-    '${allFilesLib.accept(emitter)}',
-  );
+abstract class AllIcons {
+  static List<PhosphorIconData> get icons => allFlatIconsAsMap.values.toList();
+
+  static List<String> get names => allFlatIconsAsMap.keys.toList();
+
+  static Map<String, PhosphorIconData> get allFlatIconsAsMap => {
+        ...regularIcons,
+        ...thinIcons,
+        ...lightIcons,
+        ...boldIcons,
+        ...fillIcons,
+        ...duotoneIcons,
+      };
+
+$styleGetters
+}
+""";
 
   saveContentToFile(
     filePath: '../example/lib/constants/all_icons.dart',
-    content: generatedFileContent,
+    content: content,
   );
 }
 
-/// Returns a lambda getter method
-///
-/// for example, running:
-///
-/// ```dart
-/// final method = buildGetterMethod(
-///   returnType: 'String',
-///   name: 'something',
-///   body: "'some text'",
-/// );
-/// ```
-///
-/// will give
-///
-/// ```dart
-/// String get something => 'some text'
-/// ```
-Method buildGetterMethod({
-  required String returnType,
-  required String name,
-  required String body,
-}) {
-  return Method(
-    (methodBuilder) => methodBuilder
-      ..static = true
-      ..returns = Reference(returnType)
-      ..type = MethodType.getter
-      ..name = name
-      ..lambda = true
-      ..body = Code(body),
-  );
-}
-
-Method buildIconsMapGetterByStyle({
-  required StyleFileData style,
+String _buildIconsMapGetter({
+  required String styleName,
   required List<String> lines,
-}) =>
-    buildGetterMethod(
-      returnType: 'Map<String, PhosphorIconData>',
-      name: '${style.styleName}Icons',
-      body: '{${lines.join(',')}}',
-    );
+}) {
+  final entries = lines.join(',\n    ');
+  return '  static Map<String, PhosphorIconData> get ${styleName}Icons => {\n    $entries\n  };';
+}

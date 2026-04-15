@@ -57,8 +57,7 @@ class PhosphorIconsFill {
   static const alignCenterHorizontal = PhosphorFlatIconData(0xe50a, 'Fill');
 
   /// ![align-center-horizontal-simple-fill](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/fill/align-center-horizontal-simple-fill.svg)
-  static const alignCenterHorizontalSimple =
-      PhosphorFlatIconData(0xeb0e, 'Fill');
+  static const alignCenterHorizontalSimple = PhosphorFlatIconData(0xeb0e, 'Fill');
 
   /// ![align-center-vertical-fill](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/fill/align-center-vertical-fill.svg)
   static const alignCenterVertical = PhosphorFlatIconData(0xe50c, 'Fill');

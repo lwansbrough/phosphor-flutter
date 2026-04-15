@@ -57,8 +57,7 @@ class PhosphorIconsBold {
   static const alignCenterHorizontal = PhosphorFlatIconData(0xe50a, 'Bold');
 
   /// ![align-center-horizontal-simple-bold](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/bold/align-center-horizontal-simple-bold.svg)
-  static const alignCenterHorizontalSimple =
-      PhosphorFlatIconData(0xeb0e, 'Bold');
+  static const alignCenterHorizontalSimple = PhosphorFlatIconData(0xeb0e, 'Bold');
 
   /// ![align-center-vertical-bold](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/bold/align-center-vertical-bold.svg)
   static const alignCenterVertical = PhosphorFlatIconData(0xe50c, 'Bold');

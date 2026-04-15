@@ -57,15 +57,13 @@ class PhosphorIconsLight {
   static const alignCenterHorizontal = PhosphorFlatIconData(0xe50a, 'Light');
 
   /// ![align-center-horizontal-simple-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/align-center-horizontal-simple-light.svg)
-  static const alignCenterHorizontalSimple =
-      PhosphorFlatIconData(0xeb0e, 'Light');
+  static const alignCenterHorizontalSimple = PhosphorFlatIconData(0xeb0e, 'Light');
 
   /// ![align-center-vertical-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/align-center-vertical-light.svg)
   static const alignCenterVertical = PhosphorFlatIconData(0xe50c, 'Light');
 
   /// ![align-center-vertical-simple-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/align-center-vertical-simple-light.svg)
-  static const alignCenterVerticalSimple =
-      PhosphorFlatIconData(0xeb10, 'Light');
+  static const alignCenterVerticalSimple = PhosphorFlatIconData(0xeb10, 'Light');
 
   /// ![align-left-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/align-left-light.svg)
   static const alignLeft = PhosphorFlatIconData(0xe50e, 'Light');
@@ -2549,8 +2547,7 @@ class PhosphorIconsLight {
   static const linkSimpleHorizontal = PhosphorFlatIconData(0xe2ea, 'Light');
 
   /// ![link-simple-horizontal-break-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/link-simple-horizontal-break-light.svg)
-  static const linkSimpleHorizontalBreak =
-      PhosphorFlatIconData(0xe2ec, 'Light');
+  static const linkSimpleHorizontalBreak = PhosphorFlatIconData(0xe2ec, 'Light');
 
   /// ![linkedin-logo-light](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/light/linkedin-logo-light.svg)
   static const linkedinLogo = PhosphorFlatIconData(0xe2ee, 'Light');

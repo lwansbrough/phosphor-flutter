@@ -57,15 +57,13 @@ class PhosphorIconsRegular {
   static const alignCenterHorizontal = PhosphorFlatIconData(0xe50a, 'Regular');
 
   /// ![align-center-horizontal-simple](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/align-center-horizontal-simple.svg)
-  static const alignCenterHorizontalSimple =
-      PhosphorFlatIconData(0xeb0e, 'Regular');
+  static const alignCenterHorizontalSimple = PhosphorFlatIconData(0xeb0e, 'Regular');
 
   /// ![align-center-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/align-center-vertical.svg)
   static const alignCenterVertical = PhosphorFlatIconData(0xe50c, 'Regular');
 
   /// ![align-center-vertical-simple](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/align-center-vertical-simple.svg)
-  static const alignCenterVerticalSimple =
-      PhosphorFlatIconData(0xeb10, 'Regular');
+  static const alignCenterVerticalSimple = PhosphorFlatIconData(0xeb10, 'Regular');
 
   /// ![align-left](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/align-left.svg)
   static const alignLeft = PhosphorFlatIconData(0xe50e, 'Regular');
@@ -404,8 +402,7 @@ class PhosphorIconsRegular {
   static const arrowsOutCardinal = PhosphorFlatIconData(0xe0a4, 'Regular');
 
   /// ![arrows-out-line-horizontal](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/arrows-out-line-horizontal.svg)
-  static const arrowsOutLineHorizontal =
-      PhosphorFlatIconData(0xe534, 'Regular');
+  static const arrowsOutLineHorizontal = PhosphorFlatIconData(0xe534, 'Regular');
 
   /// ![arrows-out-line-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/arrows-out-line-vertical.svg)
   static const arrowsOutLineVertical = PhosphorFlatIconData(0xe536, 'Regular');
@@ -510,8 +507,7 @@ class PhosphorIconsRegular {
   static const batteryCharging = PhosphorFlatIconData(0xe0ba, 'Regular');
 
   /// ![battery-charging-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/battery-charging-vertical.svg)
-  static const batteryChargingVertical =
-      PhosphorFlatIconData(0xe0bc, 'Regular');
+  static const batteryChargingVertical = PhosphorFlatIconData(0xe0bc, 'Regular');
 
   /// ![battery-empty](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/battery-empty.svg)
   static const batteryEmpty = PhosphorFlatIconData(0xe0be, 'Regular');
@@ -1531,15 +1527,13 @@ class PhosphorIconsRegular {
   static const dotsThreeCircle = PhosphorFlatIconData(0xe200, 'Regular');
 
   /// ![dots-three-circle-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/dots-three-circle-vertical.svg)
-  static const dotsThreeCircleVertical =
-      PhosphorFlatIconData(0xe202, 'Regular');
+  static const dotsThreeCircleVertical = PhosphorFlatIconData(0xe202, 'Regular');
 
   /// ![dots-three-outline](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/dots-three-outline.svg)
   static const dotsThreeOutline = PhosphorFlatIconData(0xe204, 'Regular');
 
   /// ![dots-three-outline-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/dots-three-outline-vertical.svg)
-  static const dotsThreeOutlineVertical =
-      PhosphorFlatIconData(0xe206, 'Regular');
+  static const dotsThreeOutlineVertical = PhosphorFlatIconData(0xe206, 'Regular');
 
   /// ![dots-three-vertical](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/dots-three-vertical.svg)
   static const dotsThreeVertical = PhosphorFlatIconData(0xe208, 'Regular');
@@ -2553,8 +2547,7 @@ class PhosphorIconsRegular {
   static const linkSimpleHorizontal = PhosphorFlatIconData(0xe2ea, 'Regular');
 
   /// ![link-simple-horizontal-break](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/link-simple-horizontal-break.svg)
-  static const linkSimpleHorizontalBreak =
-      PhosphorFlatIconData(0xe2ec, 'Regular');
+  static const linkSimpleHorizontalBreak = PhosphorFlatIconData(0xe2ec, 'Regular');
 
   /// ![linkedin-logo](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/linkedin-logo.svg)
   static const linkedinLogo = PhosphorFlatIconData(0xe2ee, 'Regular');
@@ -2743,8 +2736,7 @@ class PhosphorIconsRegular {
   static const microsoftOutlookLogo = PhosphorFlatIconData(0xeb70, 'Regular');
 
   /// ![microsoft-powerpoint-logo](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/microsoft-powerpoint-logo.svg)
-  static const microsoftPowerpointLogo =
-      PhosphorFlatIconData(0xeace, 'Regular');
+  static const microsoftPowerpointLogo = PhosphorFlatIconData(0xeace, 'Regular');
 
   /// ![microsoft-teams-logo](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/regular/microsoft-teams-logo.svg)
   static const microsoftTeamsLogo = PhosphorFlatIconData(0xeb66, 'Regular');

@@ -36323,5 +36323,5 @@ enum PhosphorIconsStyle {
   fill,
 
   /// Duotone Icons
-  duotone
+  duotone,
 }

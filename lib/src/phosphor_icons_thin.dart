@@ -57,8 +57,7 @@ class PhosphorIconsThin {
   static const alignCenterHorizontal = PhosphorFlatIconData(0xe50a, 'Thin');
 
   /// ![align-center-horizontal-simple-thin](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/thin/align-center-horizontal-simple-thin.svg)
-  static const alignCenterHorizontalSimple =
-      PhosphorFlatIconData(0xeb0e, 'Thin');
+  static const alignCenterHorizontalSimple = PhosphorFlatIconData(0xeb0e, 'Thin');
 
   /// ![align-center-vertical-thin](https://raw.githubusercontent.com/phosphor-icons/core/main/assets/thin/align-center-vertical-thin.svg)
   static const alignCenterVertical = PhosphorFlatIconData(0xe50c, 'Thin');
